@@ -21,7 +21,6 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-image: url(/img/argentinacampeon.jpg);
     width: auto;
     height: auto;
     background-size: cover;
@@ -46,22 +45,29 @@ body-b {
 }
 
 .tituloprincipal {
-    color: white;
-    font-weight: 900;
-    font-size: 200%;
-    font-family: initial, 'Arial Narrow Bold', sans-serif;
+    color: rgb(17, 17, 16);
+    object-position: center;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
     background-position: center;
-    background-color: #251b88;
     font-variant-position: initial;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 30px;
+    text-decoration: dashed;
 }
 
 H1 {
-    color: rgb(15, 15, 15);
-    font-weight: 21px;
+    text-align: center;
+    color: hsl(278, 69%, 28%);
+    text-shadow: 6px 2px 6px rgb(14, 13, 13);
+    font-weight: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-position: center;
     font-variant-position: initial;
+    padding-top: 25px;
+    padding-bottom: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -73,7 +79,7 @@ H2 {
 }
 
 .letranormal {
-    color: black;
+    color: rgb(252, 247, 247);
     margin: 100;
     font-family: 'Times New Roman', Times, serif;
     flex-direction: row;
@@ -88,18 +94,24 @@ H2 {
     transition: 0.3s;
     border-radius: 10px;
     margin-top: 10px;
+  
+}
+
+.card {
+    background-color: aqua;
+
 }
 
 .card2 {
     width: 170px;
     height: 170px;
+    display:flex;
     overflow: hidden;
     border-radius: 50%;
-    position: center;
+    position:center;
     margin-top: 10px;
 
 }
-
 
 .card:hover {
     box-shadow: 0;
@@ -121,11 +133,20 @@ H2 {
     font-weight: 100;
 }
 
+#grupos {
+background: rgb(223, 213, 213);
+width: 640px;
+height: auto;
+border-radius: 20px;
+opacity: 87%;
+
+}
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
+  
 }
 
 div.gallery:hover {
@@ -172,16 +193,13 @@ div.desc {
     font-weight: 500;
 }
 
-body {
-    margin: 0;
-}
 
 ul.topnav {
     list-style-type: none;
-    margin: 3px;
-    padding: 3px;
+    margin: 0px;
+    padding: 4px;
     overflow: hidden;
-    background-color: rgb(19, 3, 49);
+    background-color: rgb(53, 37, 192);
     opacity: 0.7;
 }
 
