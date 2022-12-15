@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
 
-    <title>ISPC y la Seleccion Argentina</title>
-    <link rel="stylesheet" href="Estilos/styles.css">
+    <title> ISPC y la Seleccion Argentina</title>
+    <link rel="stylesheet" href="css/estilos.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -18,7 +19,7 @@
             <li><a href="Inicio.html">Inicio</a></li>
             <li><a href="Estadios.html">Estadios</a></li>
             <li><a href="Fixture.html">Fixture</a></li>
-            <li class="right"><a class="active" href="Login.html">Login</a></li>
+            <li class="right"><a class="active" href="Login.html">Ingresar</a></li>
         </ul>
     </div>
     <div class="container text-center">
@@ -34,43 +35,46 @@
         </div>
     </div>
 </header>
-<style>
-    body {
-        background-image: url(https://wallpaper.dog/large/10727316.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-    }
-</style>
 
 <body>
-    <div id="log"> 
-    <section class="form-main" 
-            <div class="form-conte">
-                <div class="box">
-                    <h3>Bienvenido</h3>
-                    <form action="">
-                        <div class="input-box">
-                            <input type="text" placeholder="Email" class="Input-control">
-                        </div>
-                        <div class="input-box">
-                            <input type="password" placeholder="Password" class="Input-control">
-                            <div class="Input-link">
-                                <a class="gradient-text">Has olvidado tu contraseña</a>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn">Iniciar Sesion
+    <center>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
 
-                        </button>
-                    </form>
-                    <p>No tienes cuenta?
-                        <a href="#"></a>
-                    </p>
-                </div>
-            </div>
-        </section>
+        <div class="formulario">
+            <h3>Iniciar Sesión</h3>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h3>Crea tu Cuenta</h3>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+
+                <input type="password" placeholder="Contraseña" required>
+
+                <input type="email" placeholder="Correo Electronico" required>
+
+                <input type="text" placeholder="Teléfono" required>
+
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
     </div>
+</center>
+    <script src="jquery-3.1.1min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </section>
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -91,10 +95,10 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
         </ul>
     </footer>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+</div>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
