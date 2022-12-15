@@ -4,31 +4,29 @@ var Connection = require('tedious').Connection;
         authentication: {
             type: 'default',
             options: {
-               // userName: 'your_username', //update me
-                //password: 'your_password'  //update me
-                trustedConnection: true
+                userName: 'JULF3', //update me
+                password: 'Juana'  //update me
             }
         },
         options: {
             // If you are on Microsoft Azure, you need encryption:
-           //encrypt: true,
-            //database: 'your_database'  //update me
+            encrypt: false,
+            database: 'ISPC - FS 2022you',  //update me
         }
-    };  
+    }; 
     var connection = new Connection(config);  
     connection.on('connect', function(err) {  
-        // If no error, then good to proceed.
-        getjugadores();
+        // If no error, then good to proceed.  
         console.log("Connected");  
-    });
+        executeStatement();  
+    });  
     
     connection.connect();
-
+  
     var Request = require('tedious').Request;  
-    var TYPES = require('tedious').TYPES
-
-    
-    function getjugadores() {  
+    var TYPES = require('tedious').TYPES;  
+  
+    function executeStatement() {  
         request = new Request("SELECT [Nombre y Apellido] FROM [Datos Jugadores];", function(err) {  
         if (err) {  
             console.log(err);}  
@@ -47,7 +45,7 @@ var Connection = require('tedious').Connection;
         });  
   
         request.on('done', function(rowCount, more) {  
-        console.log(rowCount + ' rows returned');  
+        console.log(rowCount + 'rows returned');  
         });  
         
         // Close the connection after the final event emitted by the request, after the callback passes
@@ -55,4 +53,4 @@ var Connection = require('tedious').Connection;
             connection.close();
         });
         connection.execSql(request);  
-    }  
+    }
