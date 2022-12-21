@@ -20,14 +20,14 @@ var config = {
     authentication: {
         type: 'default',
         options: {
-            userName: 'JULF3', //update me
-            password: 'Juana'  //update me
+            userName: '----', //update me
+            password: '----'  //update me
         }
     },
     options: {
         // If you are on Microsoft Azure, you need encryption:
         encrypt:false,
-        database: 'ISPC - FS 2022',  //update me
+        database: '-------------',  //update me
     }
 };
 var connection = new Connection(config);
